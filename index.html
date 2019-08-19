@@ -159,7 +159,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/19/第一篇文章/">第一篇文章</a>
+      <a class="article-title" href="/2019/08/19/第一篇文章/">用BootStarp做的网页</a>
     </h1>
   
 
@@ -172,11 +172,289 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
+        <h2 id="代码就直接上传了"><a href="#代码就直接上传了" class="headerlink" title="代码就直接上传了"></a>代码就直接上传了</h2><p>这是HTML5部分</p>
 <hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
+<p>‘’’<br><!DOCTYPE html></p>
+<html>
+    <head><meta name="generator" content="Hexo 3.9.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/dist/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/index05.css">
+        <script src="bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js"></script>
+        <script src="bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+    </head>
+    <body>
+        <div class="container">
+
+<pre><code>        &lt;!--导航栏--&gt;
+        &lt;nav class=&quot;navbar navbar-default navbar-fixed-top&quot; id=&quot;navWidth&quot;&gt;
+            &lt;div class=&quot;container-fluid&quot;&gt;
+                &lt;div class=&quot;navbar-header&quot;&gt;
+                    &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#myNavber&quot;&gt;
+                        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;navbar-brand&quot;&gt;Logo&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;myNavbar&quot;&gt;
+                    &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;ABOUT&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#services&quot;&gt;SERVICES&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#protfolio&quot;&gt;PORTFOLIO&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#pricing&quot;&gt;PRICING&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+
+        &lt;!--Company巨幕--&gt;
+        &lt;div class=&quot;jumbotron&quot;&gt;
+            &lt;center&gt;
+                &lt;h1&gt;&lt;strong&gt;Company&lt;/strong&gt;&lt;/h1&gt;
+                &lt;p&gt;We specialize in blablabla&lt;/p&gt;
+                &lt;div class=&quot;input-group&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Email Address&quot;/&gt;
+                    &lt;span class=&quot;input-group-btn&quot;&gt;
+                        &lt;button class=&quot;btn btn-primary&quot;&gt;Subeclian&lt;/button&gt;
+                    &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/center&gt;
+        &lt;/div&gt;
+
+        &lt;!--about内容--&gt;
+        &lt;div class=&quot;container-fluid&quot; id=&quot;about&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-md-8&quot;&gt;
+                    &lt;h3&gt;About Company Page&lt;/h3&gt;
+                    &lt;p&gt;Lorem ipsum..&lt;/p&gt;
+                    &lt;p&gt;Lorem ipsum&lt;/p&gt;
+                    &lt;button&gt;Get in Touch&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;span class=&quot;glyphicon glyphicon-signal logo&quot;&gt;&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!--Our Values--&gt;
+        &lt;div class=&quot;container-fluid text-center bg-gray&quot; id=&quot;value&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;span class=&quot;glyphicon glyphicon-globe logo&quot;&gt;&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-8&quot;&gt;
+                    &lt;h2&gt;Our Values&lt;/h2&gt;
+                    &lt;p&gt;&lt;strong&gt;MISSION:&lt;/strong&gt;Our mission lorem ipsum..&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt;VISION:&lt;/strong&gt;Our vision lorem ipsum..&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!--Services--&gt;
+        &lt;div class=&quot;container-fluid text-center&quot; id=&quot;services&quot;&gt;
+            &lt;h3&gt;SERVICES&lt;/h3&gt;
+            &lt;p&gt;What we offer&lt;/p&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;span class=&quot;glyphicon glyphicon-off logo-small&quot;&gt;&lt;/span&gt;
+                    &lt;h4&gt;POWER&lt;/h4&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet..&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;span class=&quot;glyphicon glyphicon-heart logo-small&quot;&gt;&lt;/span&gt;
+                    &lt;h4&gt;LVOE&lt;/h4&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet..&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;span class=&quot;glyphicon glyphicon-lock logo-small&quot;&gt;&lt;/span&gt;
+                    &lt;h4&gt;JOB DONE&lt;/h4&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet..&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;br /&gt;&lt;br /&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;span class=&quot;glyphicon glyphicon-leaf logo-small&quot;&gt;&lt;/span&gt;
+                    &lt;h4&gt;GREEN&lt;/h4&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet..&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;span class=&quot;glyphicon glyphicon-certificate logo-small&quot;&gt;&lt;/span&gt;
+                    &lt;h4&gt;CERTIFIED&lt;/h4&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet..&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;span class=&quot;glyphicon glyphicon-wrench logo-small&quot;&gt;&lt;/span&gt;
+                    &lt;h4&gt;HARD WORK&lt;/h4&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet..&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!--Portfolio--&gt;
+        &lt;div class=&quot;container-fluid text-center&quot; id=&quot;protfolio&quot;&gt;
+            &lt;h3&gt;Portfolio&lt;/h3&gt;
+            &lt;p&gt;What we have created&lt;/p&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;img src=&quot;img/Paris.jpg&quot; class=&quot;smallPicture&quot;/&gt;
+                    &lt;p&gt;&lt;strong&gt;Paris&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;Yes , we built Paris&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;img src=&quot;img/New York.jpg&quot; class=&quot;smallPicture&quot;/&gt;
+                    &lt;p&gt;&lt;strong&gt;New York&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;Yes , we built New York&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;img src=&quot;img/San Francisco.jpg&quot; class=&quot;smallPicture&quot;/&gt;
+                    &lt;p&gt;&lt;strong&gt;San Francisco&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;Yes , we built San Francisco&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;h3&gt;What out customers say&lt;/h3&gt;
+            &lt;!--轮播图--&gt;
+            &lt;div id=&quot;myCarousel&quot; class=&quot;carousel slide text-center&quot; data-ride=&quot;carousel&quot;&gt;
+                &lt;ol class=&quot;carousel-indicators&quot;&gt;
+                    &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+                    &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+                    &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+                &lt;/ol&gt;
+                &lt;div class=&quot;carousel-inner&quot;&gt;
+                    &lt;div class=&quot;item active&quot;&gt;
+                        &lt;p&gt;I wanna&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;item&quot;&gt;
+                        &lt;p&gt;to prove&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;item&quot;&gt;
+                        &lt;p&gt;you Wu&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;a href=&quot;#myCarousel&quot; class=&quot;carousel-control left&quot; data-slide=&quot;prev&quot;&gt;
+                    &lt;span class=&quot;glyphicon glyphicon-chevron-left&quot;&gt;&lt;/span&gt;
+                &lt;/a&gt;
+                &lt;a href=&quot;#myCarousel&quot; class=&quot;carousel-control right&quot; data-slide=&quot;next&quot;&gt;
+                    &lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!--Pricing--&gt;
+        &lt;div class=&quot;container-fluid text-center&quot; id=&quot;pricing&quot;&gt;
+            &lt;h3&gt;Pricing&lt;/h3&gt;
+            &lt;p&gt;Choose a payment plan that works for you&lt;/p&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;div class=&quot;panel panel-default text-center&quot;&gt;
+                        &lt;div class=&quot;panel panel-heading&quot;&gt;
+                            &lt;h1&gt;Basic&lt;/h1&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;panel panel-body&quot;&gt;
+                            &lt;p&gt;&lt;strong&gt;20&lt;/strong&gt; Lorem&lt;/p&gt;
+                            &lt;p&gt;&lt;strong&gt;15&lt;/strong&gt; Ipsum&lt;/p&gt;
+                            &lt;p&gt;&lt;strong&gt;10&lt;/strong&gt; Dolor&lt;/p&gt;
+                            &lt;p&gt;&lt;strong&gt;2&lt;/strong&gt; Sit&lt;/p&gt;
+                            &lt;p&gt;&lt;strong&gt;Endless&lt;/strong&gt; Amet&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;panel panel-footer&quot;&gt;
+                            &lt;h3&gt;$19&lt;/h3&gt;
+                            &lt;h4&gt;per month&lt;/h4&gt;
+                            &lt;button class=&quot;btn btn-lg&quot;&gt;Sign up&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;div class=&quot;panel panel-default text-center&quot;&gt;
+                        &lt;div class=&quot;panel panel-heading&quot;&gt;
+                            &lt;h1&gt;Pro&lt;/h1&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;panel panel-body&quot;&gt;
+                            &lt;p&gt;&lt;strong&gt;20&lt;/strong&gt; Lorem&lt;/p&gt;
+                            &lt;p&gt;&lt;strong&gt;15&lt;/strong&gt; Ipsum&lt;/p&gt;
+                            &lt;p&gt;&lt;strong&gt;10&lt;/strong&gt; Dolor&lt;/p&gt;
+                            &lt;p&gt;&lt;strong&gt;2&lt;/strong&gt; Sit&lt;/p&gt;
+                            &lt;p&gt;&lt;strong&gt;Endless&lt;/strong&gt; Amet&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;panel panel-footer&quot;&gt;
+                            &lt;h3&gt;$29&lt;/h3&gt;
+                            &lt;h4&gt;per month&lt;/h4&gt;
+                            &lt;button class=&quot;btn btn-lg&quot;&gt;Sign up&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;div class=&quot;panel panel-default text-center&quot;&gt;
+                        &lt;div class=&quot;panel panel-heading&quot;&gt;
+                            &lt;h1&gt;Premium&lt;/h1&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;panel panel-body&quot;&gt;
+                            &lt;p&gt;&lt;strong&gt;20&lt;/strong&gt; Lorem&lt;/p&gt;
+                            &lt;p&gt;&lt;strong&gt;15&lt;/strong&gt; Ipsum&lt;/p&gt;
+                            &lt;p&gt;&lt;strong&gt;10&lt;/strong&gt; Dolor&lt;/p&gt;
+                            &lt;p&gt;&lt;strong&gt;2&lt;/strong&gt; Sit&lt;/p&gt;
+                            &lt;p&gt;&lt;strong&gt;Endless&lt;/strong&gt; Amet&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;panel panel-footer&quot;&gt;
+                            &lt;h3&gt;$49&lt;/h3&gt;
+                            &lt;h4&gt;per month&lt;/h4&gt;
+                            &lt;button class=&quot;btn btn-lg&quot;&gt;Sign up&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!--Contact--&gt;
+        &lt;div class=&quot;container-fluid&quot; id=&quot;contact&quot;&gt;
+            &lt;h1 class=&quot;text-center&quot;&gt;CONTACT&lt;/h1&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-md-5&quot;&gt;
+                    &lt;p&gt;Contact us and we&apos;ll get back to you within 25 hours.&lt;/p&gt;
+                    &lt;p&gt;&lt;span class=&quot;glyphicon glyphicon-map-marker&quot;&gt;&lt;/span&gt; &amp;nbsp;China Guangdong&lt;/p&gt;
+                    &lt;p&gt;&lt;span class=&quot;glyphicon glyphicon-phone&quot;&gt;&lt;/span&gt; &amp;nbsp;15697581507&lt;/p&gt;
+                    &lt;p&gt;&lt;span class=&quot;glyphicon glyphicon-envelope&quot;&gt;&lt;/span&gt; &amp;nbsp;444253190@qq.com&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-7&quot;&gt;
+                    &lt;div class=&quot;row&quot;&gt;
+                        &lt;div class=&quot;col-md-6 form-group&quot;&gt;
+                            &lt;input type=&quot;text&quot; value=&quot;name&quot; placeholder=&quot;Name&quot; class=&quot;form-control&quot;/&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6 form-group&quot;&gt;
+                            &lt;input type=&quot;text&quot; value=&quot;Email&quot; placeholder=&quot;Email&quot; class=&quot;form-control&quot;/&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;textarea class=&quot;form-control&quot; rows=&quot;5&quot; name=&quot;comments&quot; placeholder=&quot;Comment&quot;&gt;&lt;/textarea&gt;
+                    &lt;div class=&quot;row&quot;&gt;
+                        &lt;div class=&quot;col-md-12 form-group&quot;&gt;
+                            &lt;button class=&quot;btn btn-default pull-right&quot; type=&quot;submit&quot;&gt;Send&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!--footer--&gt;
+        &lt;footer class=&quot;container-fluid text-center&quot;&gt;
+            &lt;a href=&quot;#myPage&quot; title=&quot;To TOP&quot;&gt;
+                &lt;span class=&quot;glyphicon glyphicon-chevron-up&quot;&gt;&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;p&gt;I wanna to find a job &lt;a href=&quot;https://ellingtonchan.github.io/&quot;&gt;But ...&lt;/a&gt;&lt;/p&gt;
+        &lt;/footer&gt;
+
+    &lt;/div&gt;
+&lt;/body&gt;</code></pre></div></body></html>
+
+<p>‘’’</p>
+<h2 id="这里是简单的CSS样式部分"><a href="#这里是简单的CSS样式部分" class="headerlink" title="这里是简单的CSS样式部分"></a>这里是简单的CSS样式部分</h2><p>内容<br>‘’’<br>body{<br>    padding-top: 10px;<br>}<br>.logo{<br>    font-size: 200px;<br>}<br>.bg-gray{<br>    background-color: gray;<br>}<br>.logo-small{<br>    font-size: 50px;<br>}<br>.smallPicture{<br>    width: 300px;<br>    height: 200px;<br>}</p>
+<p>#navWidth{<br>    width: 100%;<br>}</p>
+<p>‘’’</p>
 <hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>EllingtonChan</p>
+<h2 id="直接复制就可以用上了"><a href="#直接复制就可以用上了" class="headerlink" title="直接复制就可以用上了"></a>直接复制就可以用上了</h2><p>图片直接更改就完事了</p>
 
       
 
